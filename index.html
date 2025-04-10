@@ -1,0 +1,21 @@
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="error-msg"></p>
+<script>
+function myFunction() {
+  const message = document.getElementById("error-msg");
+  message.innerHTML = "";
+  let x = document.getElementById("demo").value;
+  try {
+    if(x.trim() == "") throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5) throw "too low";
+    if(x > 5) throw "average";
+    if(x > 10) throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input value is " + err;
+  }
+}
+</script>

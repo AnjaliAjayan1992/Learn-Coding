@@ -1,0 +1,91 @@
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100vh; /* use viewport height */
+    margin: 0;
+    background-image: url(./images/Vector-PNG-Pic\ copy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 300px;
+    justify-content: center;  /* horizontally center */
+    align-items: center;
+}
+
+.center-container{
+    padding: 30px 40px !important;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 10px;
+    /* max-width: 1000px; */
+  
+    
+    
+}
+
+.blue-text {
+    color: #00BCD4
+}
+
+.form-control-label {
+    margin-bottom: 0
+}
+
+input,
+textarea,
+button {
+    padding: 8px 15px;
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+    font-weight: 300;
+    width: 100%;
+
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #00BCD4;
+    outline-width: 0;
+    font-weight: 400
+}
+
+
+
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(4, 81, 153);
+  }
+
+.btn-submit{
+    background-color: rgb(4, 81, 153);
+    color: #fff;
+}
+.btn-submit:hover{
+    background-color: rgb(136, 175, 212);
+    color: #fff;
+}
+@media screen and (max-width:1024px) {
+    body{
+        padding: 50px;
+        height: 100vh;
+        background-size: contain;
+    }
+   
+    
+}

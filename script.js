@@ -1,14 +1,37 @@
 
-const student = {
-  firstName: "Adam",
-  lastName: "Antony",
-  age: 10
-};
+function validateEmail() {
+  const email = document.getElementById("email").value;
+  const errorMsg = document.getElementById("error-msg");
+  
+  // Simple email regex pattern
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailPattern.test(email)) {
+    errorMsg.textContent = "Please enter a valid email address.";
+    return false; // prevent form submission
+  }
+
+  errorMsg.textContent = "";
+  return true; // allow form submission
+}
 
 
-let {firstName, lastName} = student;
 
-console.log(firstName + " " + lastName);
+
+
+
+
+
+// const student = {
+//   firstName: "Adam",
+//   lastName: "Antony",
+//   age: 10
+// };
+
+
+// let {firstName, lastName} = student;
+
+// console.log(firstName + " " + lastName);
 
 
 // const numbers = [45, 4, 9, 16, 25];
